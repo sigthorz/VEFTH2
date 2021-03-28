@@ -1,0 +1,160 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+html {
+  font-family: "helvetica neue", sans-serif;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: white;
+
+}
+
+.utan{
+  background-color: black;
+  margin-top: 5%;
+  color: white;
+  padding-bottom: 1%;
+}
+.utan2{
+  background-color: white;
+  color: black;
+}
+
+.nav {
+  border-bottom: 2px solid #808080;
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  background-color: white;
+}
+.menu {
+  margin: auto;
+  text-align: center;
+
+}
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: #3D3D3D;
+  margin: 0 10px;
+  line-height: 70px;
+  background-color: white;
+  opacity: 99%;
+}
+
+.fyrirsogn{
+  text-align: center;
+  font-size: 220%;
+  padding-top: 2%;
+}
+
+.fyrirsogn2{
+  text-align: center;
+  font-size: 220%;
+  padding-top: 2%;
+  margin-bottom: 0;
+}
+
+
+
+.text{
+  margin: 5%;
+  text-align: center;
+}
+
+span {
+  color: #23395d;
+}
+
+label {
+  margin: auto;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 10%;
+  float: right;
+  padding: 10px;
+}
+#toggle {
+  display: none;
+}
+
+
+@media only screen and (max-width: 48em) {
+  label {
+      display: block;
+      cursor: pointer;
+
+  }
+  .menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+  }
+  .menu a {
+      display: block;
+      border-bottom: 1px solid #e6e6e6;
+      margin:0;
+
+  }
+  #toggle:checked + .menu {
+      display: block;
+  }
+
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?1kxqq2');
+  src:  url('fonts/icomoon.eot?1kxqq2#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1kxqq2') format('truetype'),
+    url('fonts/icomoon.woff?1kxqq2') format('woff'),
+    url('fonts/icomoon.svg?1kxqq2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-spotify:before {
+  content: "\ea94";
+}
+.icon-twitter:before {
+  content: "\ea96";
+  padding: 4px;
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-steam2:before {
+  content: "\eaad";
+  padding: 4px;
+}
+.icon-github:before {
+  content: "\eab0";
+  padding: 4px;
+}
+.icon-brand79:before {
+  content: "\ead8";
+}
+.icon-play:before {
+  content: "\e912";
+}
